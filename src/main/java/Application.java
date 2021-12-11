@@ -24,13 +24,12 @@ public class Application {
         System.out.println(urunEntityService.findAllUrunByKategoriKirilim(2L));
         UrunYorum  urunYorum = urunYorumEntityService.findById(2L);
         System.out.println(urunYorum);*/
-        //List<UrunYorum> a = urunYorumEntityService.deneme(2L);
 
-        List<UrunYorumlarDto> urunYorumlari = urunYorumEntityService.getUrunComments(4L);
+        /*List<UrunYorumlarDto> urunYorumlari = urunYorumEntityService.getUrunComments(4L);
         System.out.println("2. Madde:" + urunYorumlari);
 
         List<UrunYorumSayisiDto> urunYorumSayisi = urunYorumEntityService.getUrunCount();
-        System.out.println("3. Madde:" + urunYorumSayisi);
+        System.out.println("3. Madde:" + urunYorumSayisi);*/
 
         List<KullaniciYorumlarDto> kullaniciYorumlari = kullaniciEntityService.getAllKullaniciYorum(5L);
         System.out.println("4. Madde:" + kullaniciYorumlari);

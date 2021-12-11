@@ -44,19 +44,6 @@ public class UrunYorumDao extends BaseDao {
         return query.list();
     }
 
-    public List<UrunYorum> deneme(Long urunId)
-    {
-        String sql = "select urunyorum " +
-                "from UrunYorum urunyorum " +
-                "inner join Urun urun on urunyorum.urun.id = urun.id " +
-                "where urun.id = :givenId";
-
-        Query query = getCurrentSession().createQuery(sql);
-        query.setParameter("givenId", urunId);
-
-        return query.list();
-    }
-
     public List<UrunYorumSayisiDto> getUrunCount()
     {
         String sql = "select new dto.UrunYorumSayisiDto( urun.id, urun.adi, urun.fiyat, Count(ID_URUN) )" +

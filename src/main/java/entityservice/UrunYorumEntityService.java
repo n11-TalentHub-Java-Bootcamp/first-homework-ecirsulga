@@ -27,8 +27,6 @@ public class UrunYorumEntityService {
         return urunYorumDao.getUrunComments(urunID);
     }
 
-    public List<UrunYorum> deneme(Long urunId){ return urunYorumDao.deneme(urunId);}
-
     public List<UrunYorumSayisiDto> getUrunCount()
     {
         return urunYorumDao.getUrunCount();
